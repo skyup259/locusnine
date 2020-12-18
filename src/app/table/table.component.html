@@ -1,0 +1,39 @@
+<div class="container-fluid pl-35">
+  <div class="row">
+    <div class="col">
+      <span class="font-details pl-2">Details</span>
+    </div>
+  </div>
+  <div style="overflow-x:auto;">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Saled Rep</th>
+          <th scope="col">Date</th>
+          <th scope="col">Client</th>
+          <th scope="col">Primary Contact Person</th>
+          <th scope="col">Title</th>
+          <th scope="col">Vertical</th>
+          <th scope="col">Meeting Location</th>
+          <th scope="col" style="width: 10%;">Purpose of Interaction</th>
+          <th scope="col" style="width: 15%;">Outcome and Remarks</th>
+          <th scope="col">Engagement Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let detail of details" class="border-t-b" [ngClass]="{'bg-won': detail.es === 'Won', 'bg-lost': detail.es === 'Lost'}">
+          <td>{{detail.name}}</td>
+          <td>{{detail.date}}</td>
+          <td>{{detail.client}}</td>
+          <td>{{detail.pmp}}</td>
+          <td>{{detail.title}}</td>
+          <td>{{detail.vertical}}</td>
+          <td>{{detail.ml}}</td>
+          <td class="w-10">{{detail.poi}}</td>
+          <td>{{detail.oar}}</td>
+          <td>{{detail.es}}</td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+</div>

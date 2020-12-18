@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.font-sales {
+  font-family: Roboto;
+  font-size: 48px;
+  font-weight: 300;
+  color: #231f20;
+}
+
+@media (max-width: 330px) {
+  .font-sales {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 330px) and (max-width: 500px) {
+  .font-sales {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 500px) {
+  .header {
+    height: 130px;
+  }
+
+  .pl-35 {
+    padding-left: 35px;
+  }
+}

@@ -1,0 +1,91 @@
+<div class="container-fluid pl-35">
+  <div class="row">
+    <div class="col">
+      <ul class="nav nav-tabs nav-justified bg-white h-50">
+        <li class="active-list date-range"><a href="#" class="active">TODAY</a></li>
+        <li class="date-range"><a href="#">LAST WEEK</a></li>
+        <li class="date-range"><a href="#">LAST MONTH</a></li>
+        <li class="date-range"><a href="#">THIS QUARTER</a></li>
+        <li class="date-range"><a href="#">THIS YEAR</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row mt-20">
+    <div class="col-md-9">
+      <div class="dropdown bg-white">
+        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          All Sales Reps
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="#">Option 1</a>
+          <a class="dropdown-item" href="#">Option 2</a>
+          <a class="dropdown-item" href="#">Option 3</a>
+        </div>
+      </div>
+
+      <div class="row mt-40">
+        <div class="col-md-8 card pl-45 pr-55 bg-transparent border-0">
+          <div class="card-body img-bg text-center">
+            <span *ngFor="let funnel of funnels" class="font-funnel">
+              <p class="mb-1 mt-1" [ngClass]="{'font-size-48 font-bold line-height-1':funnel.mode === 'WON'}">{{funnel.mode}}</p>
+              <p class="font-size-48 mb-4 line-height-1" [ngClass]="{'font-bold':funnel.mode === 'WON'}">{{funnel.value}}</p>
+            </span>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div *ngFor="let list of lists">
+            <div class="card card-list float-right mb-40 border-0">
+              <div class="card-body p-0">
+                <p class="p-32"><img [src]="list.icon"></p>
+                <span class="header-value">
+                  <p  class="header">{{list.header}}</p>
+                  <p class="value font-size-48">{{list.value}}</p>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="row">
+        <div class="col pl-25">
+          <ul class="nav nav-tabs nav-justified bg-white h-50">
+            <li style="width: 50%;" class="active-list"><a href="#" class="active">TOP</a></li>
+            <li style="width: 50%;"><a href="#">BOTTOM</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="row mt-40">
+        <div class="col pl-25">
+          <div *ngFor="let profile of profiles; let i=index">
+            <div class="card card-list float-right mb-40 border-0 bg-img" [ngClass]="'bg-color-'+ i">
+              <div class="card-body p-0">
+                  <p class="text-center pt-3 line-height-1 font-funnel font-size-24">{{profile.name}}</p>
+                  <table class="table borderless">
+                    <tbody class="text-center">
+                      <tr>
+                        <td class="font-funnel">New MRR</td>
+                        <td class="font-funnel font-size-48 font-bold p-0 line-height-1">{{profile.mrr}}</td>
+                      </tr>
+                      <tr>
+                        <td class="font-funnel">New Logos</td>
+                        <td class="font-funnel font-size-48 font-bold p-0 line-height-1">{{profile.logos}}</td>
+                      </tr>
+                      <tr>
+                        <td class="font-funnel">Demo Calls</td>
+                        <td class="font-funnel font-size-48 font-bold p-0 line-height-1">{{profile.calls}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,202 @@
+.bg-2196f3 {
+  background-color: #2196f3;
+}
+
+.navbar {
+  height: 50px;
+}
+
+.nav-link {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c3e50;
+  opacity: 0.5;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.nav-item .active {
+  color: #2196F3;
+}
+
+.mt-20 {
+  padding-top: 20px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.pl-25{
+  padding-left: 25px;
+}
+
+.pl-45{
+  padding-left: 55px;
+}
+
+.pr-55{
+  padding-right: 45px;
+}
+
+.dropdown {
+  font-family: Roboto;
+    font-size: 14px;
+    font-weight: 500;
+    color: #2c3e50;
+    height: 50px;
+}
+
+.img-bg {
+  background-image: url(src/assets/funnel.png);
+  background-repeat: no-repeat;
+  height: 670px;
+}
+
+.card-list {
+  height: 205px;
+  width: 100%;
+}
+
+.h-50 {
+  height: 50px !important;
+}
+
+.p-32 {
+  padding: 2rem;
+}
+
+ul li {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+li a {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  color: #2c3e50;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+li .active {
+  color: #2196F3;
+
+}
+
+ul .active-list {
+  border-bottom: 3px solid #2196F3;
+}
+
+.font-funnel {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: normal;
+  color: white;
+}
+
+.font-size-48 {
+  font-size: 48px;
+}
+
+.font-size-24 {
+  font-size: 24px;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.line-height-1 {
+  line-height: 1;
+}
+
+.header-value {
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-family: Roboto;
+}
+
+.header {
+  font-size: 18px;
+  color: #2c3e50;
+  font-weight: medium;
+  line-height: 1;
+  text-align: right;
+  margin-bottom: 0;
+  max-width: 95%;
+}
+
+.value {
+  color: #2196f3;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.borderless td, .borderless th {
+  border: none;
+}
+
+.bg-color-0 {
+  background-color: #1976D2;
+}
+
+.bg-color-1 {
+  background-color: #2196F3;
+}
+
+.bg-color-2 {
+  background-color: #64B5F6;
+}
+
+.bg-img {
+  background-image: url(src/assets/win.png);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: bottom;
+}
+
+@media (max-width: 330px) {
+  .date-range {
+    padding-left: .3rem;
+    padding-right: .3rem;
+  }
+}
+
+@media (min-width: 330px) and (max-width: 500px) {
+  .date-range {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 850px) {
+  .font-size-48 {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 500px) {
+  .date-range {
+    padding-left: 1.75rem;
+    padding-right: 1.75rem;
+  }
+
+  .pl-35 {
+    padding-left: 35px;
+  }
+}
+
